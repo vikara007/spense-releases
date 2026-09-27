@@ -1,0 +1,2 @@
+# APKs are uploaded as release files, never committed
+*.apk
