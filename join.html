@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Join a Spense group</title>
+<meta name="description" content="You're invited to split bills in Spense, a privacy-first expense app. The group is end-to-end encrypted.">
+<meta property="og:title" content="Join my Spense group">
+<meta property="og:description" content="Split bills together: same expenses, balances and UPI IDs on every phone. End-to-end encrypted.">
+<meta property="og:type" content="website">
+<style>
+  :root { --bg:#f7f5f2; --card:#fff; --text:#1b1b1f; --muted:#5f5d66; --accent:#e5533d; --line:#e6e2dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d0d10; --card:#17171c; --text:#f2f1f4; --muted:#a3a1ab; --line:#2a2a31; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:440px; margin:0 auto; padding:40px 16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px 22px; }
+  .icon { font-size:44px; }
+  h1 { font-size:24px; margin:8px 0 6px; }
+  p { color:var(--muted); margin:0 0 18px; }
+  a.btn { display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:14px; border-radius:14px; }
+  .steps { margin:22px 0 0; padding:18px 0 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  .steps b { color:var(--text); }
+  .steps ol { margin:8px 0 16px; padding-left:20px; }
+  a.btn.alt { background:transparent; color:var(--accent); border:1.5px solid var(--accent); }
+  a.help { display:block; text-align:center; margin-top:12px; color:var(--muted); font-size:14px; }
+  .lock { margin-top:18px; font-size:13px; color:var(--muted); }
+  .bad { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card" id="ok">
+    <div class="icon">👥</div>
+    <h1>You're invited to a Spense group</h1>
+    <p>Split bills with friends: everyone sees the same expenses, balances and UPI IDs, and settle-ups update on both phones.</p>
+    <a class="btn" id="open" href="#">Open in Spense</a>
+    <div class="steps">
+      <b>Don't have Spense yet?</b>
+      <ol>
+        <li>Download and install the app (Android).</li>
+        <li>Open it once and finish the setup.</li>
+        <li>Come back here and tap <b>Open in Spense</b>.</li>
+      </ol>
+      <a class="btn alt" href="https://github.com/vikara007/spense-releases/releases/latest/download/spense.apk">⬇ Download Spense for Android</a>
+      <a class="help" href="https://github.com/vikara007/spense-releases#install">Install steps and help ›</a>
+    </div>
+    <div class="lock">🔒 The group is end-to-end encrypted. Its key is in this link and never leaves your phone: this page doesn't send it anywhere.</div>
+  </div>
+  <div class="card bad" id="bad">
+    <div class="icon">🔗</div>
+    <h1>This invite link is incomplete</h1>
+    <p>Ask your friend to share the group link again from Spense (group → 🔗 Share link).</p>
+  </div>
+</main>
+<script>
+  // Everything stays in the browser: the key (after #) is never sent to any server.
+  var m = location.hash.match(/^#([A-Za-z0-9_-]{22})\.([A-Za-z0-9_-]{43})$/);
+  if (m) {
+    document.getElementById('open').href = 'spense://join/' + m[1] + '#' + m[2];
+  } else {
+    document.getElementById('ok').style.display = 'none';
+    document.getElementById('bad').style.display = 'block';
+  }
+</script>
+</body>
+</html>
