@@ -6,6 +6,16 @@ A privacy-first expense manager and bill splitter. Add spends in 3 taps, split b
 
 Spense is in early testing and isn't on Google Play yet. This page has only the app, not its source code.
 
+## What it does
+- **Bank SMS → entries automatically** (full version): spends, refunds, card bills and transfers are read on your phone and approved with one tap from the notification, widget or Inbox. Duplicates and own-account transfers are spotted for you.
+- **Fast manual entry:** cash in 3 taps, quick categories on the home-screen widget, and **receipt scan** (read on the phone) to fill the amount.
+- **Budgets and safe-to-spend:** a daily "safe to spend" figure, goals, and bills and dues with reminders.
+- **Stats that make sense:** by category, merchant and purpose (tags), with merchant and purpose pages, a spending mind map and places.
+- **On-phone AI:** tidies merchant names and categories, writes one short insight line, and answers questions like *"How much on Zepto this month?"*. It runs fully offline, and every number comes from your own data.
+- **Split bills:** groups, who-owes-whom, settle up by UPI, and shared groups that sync live with end-to-end encryption.
+- **Accounts:** bank, cash, cards and loans with correct balances, plus multiple currencies.
+- **Your data is yours:** CSV import (with column mapping), export, and encrypted backup and restore, free forever.
+
 ## Which download?
 - **`spense.apk` — Spense Lite (recommended).** Installs normally. Everything works (entries, budgets, stats, splits, shared groups, the on-phone AI) except reading bank SMS: you add entries by hand.
 - **`spense-full.apk` — with bank SMS auto-capture.** In India, Play Protect blocks installing apps from outside Play that read SMS (scammers misuse that permission), so this one may be refused. Get it from [All versions](https://github.com/vikara007/spense-releases/releases). Auto-capture for everyone comes with the Play Store version.
