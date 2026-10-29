@@ -23,9 +23,10 @@ Bank SMS turn into entries you approve in one tap, bills split themselves among 
 | <img src="screenshots/home.png" width="220"> | **🎯 Safe to spend today.** Home tells you how much you can spend each day so the month ends in budget, after bills, subscriptions and card dues. Budgets per category, goals to save towards, and reminders before bills are due. |
 | <img src="screenshots/mindmap.png" width="220"> | **🧠 A mind map of your month.** See categories branch into shops, tap to zoom in. Every shop and purpose tag has its own page with its entries, total and trend. |
 | <img src="screenshots/stats.png" width="220"> | **📊 Stats that make sense.** Where it went, what kind (needs vs wants) and what it means, month over month. Share the month as a **PDF report**. |
-| <img src="screenshots/ask.png" width="220"> | **💬 Ask about your money.** *"How much on groceries this month?"*, *"Biggest spends in August?"*, *"Find 65"*. The AI model (Gemma, about 2 GB, downloaded once) runs **offline on your phone**, and every number comes from your own entries. |
+| <img src="screenshots/ask.png" width="220"> | **💬 Ask about your money.** *"How much on groceries this month?"*, *"Biggest spends in August?"*, *"Find 65"*. The AI model (Gemma, about 2 GB, downloaded once) runs **offline on your phone**, and every number comes from your own entries. Ask *"who owes me"* or *"home loan left"* too. Optional: connect **your own Claude, ChatGPT or Gemini key** for Ask (asks first, never sends your SMS). |
 | <img src="screenshots/rules.png" width="220"> | **🪄 Teach it once.** Write rules in plain words, like *"Starbucks under ₹500 is Snacks"*, and every new entry follows. Fix one entry and tap **Apply to N similar** (with Undo). It learns your shops as you go. |
 | <img src="screenshots/splits.png" width="220"> | **👥 Split bills with friends.** Split any payment from the Inbox, and keep groups for trips and flats with who owes whom and the fewest payments to settle. Pay by UPI. **Shared groups sync live, end-to-end encrypted.** |
+| <img src="screenshots/splits.png" width="220"> | **🤝 Dues: loans, EMIs, lend and borrow.** One place for money owed either way: who owes you and whom you owe (personal or from a group, never netted), pay-back dates, **Due soon**, and bank loans with EMI, what's left, next EMI, end date, interest this financial year and a **prepay calculator**. Share a reminder or statement on WhatsApp. |
 | <img src="screenshots/share.png" width="220"> | **📤 Share details.** Send a group's balances to WhatsApp, share an invite link, or export a PDF or CSV. It goes only where you send it. |
 | <img src="screenshots/accounts.png" width="220"> | **🏦 Accounts that add up.** Bank, cash, cards, loans and money lent, with correct balances. Future-dated entries count on their date, and there are multiple currencies and exchange rates. |
 | <img src="screenshots/budget.png" width="220"> | **📅 Budgets and repeats.** Monthly limits with carry-over, repeat entries and subscriptions (rent, SIPs, Netflix), and bill reminders. |
@@ -50,6 +51,7 @@ Spense checks once a day and shows **"Update available"** on Home (or use Settin
 - Your entries, amounts, merchants, places and receipts stay on your phone, encrypted.
 - Shared split groups sync end-to-end encrypted: the relay can't read them. The group key is in the invite link and never reaches any server.
 - Only what you choose to send (📤 feedback, or the opt-in weekly usage counts) ever leaves the phone.
+- Optional: if you connect your own AI key, Ask sends your question and the needed figures to that AI company, after you agree. Your SMS are never sent.
 
 ## Feedback
 In the app: Settings → Help & feedback → 📤 Send.
